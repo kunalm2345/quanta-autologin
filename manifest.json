@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Quanta Auto-Login",
+  "version": "1.0",
+  "description": "Logs into QuantaAWS automatically",
+  "permissions": ["storage", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://quantaaws.bits-goa.ac.in/"],
+      "js": ["content.js"]
+    },
+    {
+      "matches": [
+        "https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount/*"
+      ],
+      "js": ["content.js"]
+    },
+    {
+      "matches": ["https://quantaaws.bits-goa.ac.in/login/index.php*"],
+      "js": ["content.js"]
+    }
+  ]
+}
