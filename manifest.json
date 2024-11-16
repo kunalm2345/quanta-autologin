@@ -10,8 +10,12 @@
       "js": ["content.js"]
     },
     {
+      "matches": ["https://quantaaws.bits-goa.ac.in/?"],
+      "js": ["content.js"]
+    },
+    {
       "matches": [
-        "https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount/*"
+        "https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=744638316108*"
       ],
       "js": ["content.js"]
     },

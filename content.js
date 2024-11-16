@@ -46,7 +46,10 @@ function redirectToLogin() {
 }
 
 // Execute the appropriate function based on the URL
-if (window.location.href === "https://quantaaws.bits-goa.ac.in/") {
+if (
+  (window.location.href === "https://quantaaws.bits-goa.ac.in/") |
+  (window.location.href === "https://quantaaws.bits-goa.ac.in/?")
+) {
   redirectToLogin();
 } else if (
   window.location.href.includes(
